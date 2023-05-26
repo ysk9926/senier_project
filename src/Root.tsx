@@ -20,7 +20,7 @@ const BackgroundMain = styled.div`
 `;
 const BackgroundFooter = styled.div`
   width: 100%;
-  height: 136px;
+  height: 120px;
   background-color: #b87d54;
   position: fixed;
   bottom: 0px;
