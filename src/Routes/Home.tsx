@@ -1,12 +1,12 @@
 import titleImg from "../Img/title.png";
 import { Title, TitleText } from "../Style/HomeStyle";
 import ImgGrid from "../components/ImgGrid";
-import PlayBtn from "../components/PlayBtn";
+import PlayBar from "../components/PlayBtn";
 
 function Home() {
   return (
     <>
-      <PlayBtn />
+      <PlayBar />
       <Title>
         <TitleText src={titleImg} />
       </Title>
