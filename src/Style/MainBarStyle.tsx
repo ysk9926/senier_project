@@ -79,3 +79,13 @@ export const MotionVol = styled(motion.div)`
   align-items: center;
   justify-content: center;
 `;
+
+export const MusicVolInput = styled(motion.input)`
+  height: 5px;
+  outline: none;
+  accent-color: #637551;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+`;

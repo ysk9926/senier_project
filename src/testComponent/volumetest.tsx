@@ -1,15 +1,11 @@
-import { MusicVolState, ShowVolState, audioState } from "../../Atom";
-import {
-  MotionVol,
-  MusicVolInput,
-  PlayBtn,
-  SoundSvg,
-} from "../../Style/MainBarStyle";
+import { MusicVolState, ShowVolState, audioState } from "../Atom";
+
 import { useRecoilState } from "recoil";
 import { ChangeEvent } from "react";
 import { AnimatePresence } from "framer-motion";
+import { MotionVolT, MusicVolInputT, PlayBtnT, SvgT } from "./testStyle";
 
-function VolControl() {
+function VolTest() {
   const [showControls, setShowControls] = useRecoilState(ShowVolState);
   const [volume, setVolume] = useRecoilState(MusicVolState);
   const [audio, setAudio] = useRecoilState(audioState);
@@ -25,8 +21,8 @@ function VolControl() {
   };
   return (
     <>
-      <PlayBtn onClick={handleVolBtnClick}>
-        <SoundSvg
+      <PlayBtnT onClick={handleVolBtnClick}>
+        <SvgT
           xmlns="http://www.w3.org/2000/svg"
           width="16.362"
           height="13.635"
@@ -39,17 +35,17 @@ function VolControl() {
             transform="translate(-18.296 -337.489)"
             fill="#fff"
           />
-        </SoundSvg>
-      </PlayBtn>
+        </SvgT>
+      </PlayBtnT>
       <AnimatePresence>
         {showControls && (
-          <MotionVol
+          <MotionVolT
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 30 }}
             exit={{ opacity: 0, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <MusicVolInput
+            <MusicVolInputT
               type="range"
               min="0"
               max="1"
@@ -57,11 +53,11 @@ function VolControl() {
               value={volume}
               onChange={handleVolumeChange}
             />
-          </MotionVol>
+          </MotionVolT>
         )}
       </AnimatePresence>
     </>
   );
 }
 
-export default VolControl;
+export default VolTest;
