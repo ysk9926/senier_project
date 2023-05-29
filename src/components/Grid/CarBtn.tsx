@@ -1,4 +1,4 @@
-import { CarBtnLabel, CarBtnWrapper, CarButton } from "../Style/BtnStyle";
+import { CarBtnLabel, CarBtnWrapper, CarButton } from "../../Style/BtnStyle";
 
 function CarBtn() {
   const onclick = () => {

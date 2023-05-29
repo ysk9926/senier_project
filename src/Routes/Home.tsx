@@ -1,12 +1,14 @@
 import titleImg from "../Img/title.png";
 import { Title, TitleText } from "../Style/HomeStyle";
-import ImgGrid from "../components/ImgGrid";
-import PlayBar from "../components/PlayBtn";
+import CustomBar from "../components/CustomBar/CustomBar";
+import ImgGrid from "../components/Grid/ImgGrid";
+import MainBar from "../components/MainBar/MainBar";
 
 function Home() {
   return (
     <>
-      <PlayBar />
+      <MainBar />
+      <CustomBar />
       <Title>
         <TitleText src={titleImg} />
       </Title>

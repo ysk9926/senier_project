@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from "react-query";
 import { Outlet } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
@@ -26,16 +27,20 @@ const BackgroundFooter = styled.div`
   bottom: 0px;
 `;
 
+const client = new QueryClient();
+
 function Root() {
   return (
     <>
-      <GlobalStyled />
-      <Reset />
+      <QueryClientProvider client={client}>
+        <GlobalStyled />
+        <Reset />
 
-      <BackgroundFooter />
-      <BackgroundMain />
+        <BackgroundFooter />
+        <BackgroundMain />
 
-      <Outlet />
+        <Outlet />
+      </QueryClientProvider>
     </>
   );
 }

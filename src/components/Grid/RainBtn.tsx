@@ -1,4 +1,4 @@
-import { RainBtnLabel, RainBtnWrapper, RainButton } from "../Style/BtnStyle";
+import { RainBtnLabel, RainBtnWrapper, RainButton } from "../../Style/BtnStyle";
 
 function RainBtn() {
   const onclick = () => {

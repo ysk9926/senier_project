@@ -2,7 +2,7 @@ import {
   PeopleBtnLabel,
   PeopleBtnWrapper,
   PeopleButton,
-} from "../Style/BtnStyle";
+} from "../../Style/BtnStyle";
 
 function PeopleBtn() {
   const onClick = () => {

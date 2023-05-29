@@ -4,10 +4,10 @@ import {
   ImgGridWrapper,
   ImgWrapper,
   People,
-} from "../Style/HomeStyle";
-import barImg from "../Img/barL.png";
-import carImg from "../Img/carL.png";
-import peopleImg from "../Img/peopleL.png";
+} from "../../Style/HomeStyle";
+import barImg from "../../Img/barL.png";
+import carImg from "../../Img/carL.png";
+import peopleImg from "../../Img/peopleL.png";
 import CarBtn from "./CarBtn";
 import PeopleBtn from "./PeopleBtn";
 import RainBtn from "./RainBtn";
