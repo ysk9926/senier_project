@@ -1,6 +1,8 @@
 import {
   Bar,
+  BarWrapper,
   Car,
+  CarWrapper,
   ImgGridWrapper,
   ImgWrapper,
   People,
@@ -8,25 +10,19 @@ import {
 import barImg from "../../Img/barL.png";
 import carImg from "../../Img/carL.png";
 import peopleImg from "../../Img/peopleL.png";
-import CarBtn from "./CarBtn";
-import PeopleBtn from "./PeopleBtn";
-import RainBtn from "./RainBtn";
 
 function ImgGrid() {
   return (
     <ImgGridWrapper>
-      <ImgWrapper>
-        <RainBtn />
-        <CarBtn />
+      <CarWrapper>
         <Car src={carImg} />
-      </ImgWrapper>
+      </CarWrapper>
       <ImgWrapper>
-        <PeopleBtn />
         <People src={peopleImg} />
       </ImgWrapper>
-      <ImgWrapper>
+      <BarWrapper>
         <Bar src={barImg} />
-      </ImgWrapper>
+      </BarWrapper>
     </ImgGridWrapper>
   );
 }

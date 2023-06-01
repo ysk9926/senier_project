@@ -11,7 +11,7 @@ function PeopleBtn() {
   return (
     <PeopleBtnWrapper>
       <PeopleButton id="rainBtn" onClick={onClick} />
-      <PeopleBtnLabel htmlFor="rainBtn"> Coge People </PeopleBtnLabel>
+      <PeopleBtnLabel htmlFor="rainBtn"> Whispers People </PeopleBtnLabel>
     </PeopleBtnWrapper>
   );
 }

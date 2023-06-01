@@ -1,13 +1,19 @@
 import styled from "styled-components";
 
 export const RainBtnWrapper = styled.div`
+  height: 40px;
+  width: 200px;
   z-index: 99;
   position: absolute;
-  right: 30%;
-  top: 15%;
+  left: 15%;
+  bottom: 550px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  @media (max-width: 1400px) {
+    top: 230px;
+    left: 5%;
+  }
 `;
 export const RainButton = styled.button`
   background: none;
@@ -30,13 +36,19 @@ export const RainBtnLabel = styled.label`
   color: #58644d;
 `;
 export const CarBtnWrapper = styled.div`
+  height: 40px;
+  width: 200px;
   z-index: 99;
   position: absolute;
-  right: 20%;
-  top: 50%;
+  right: 70%;
+  bottom: 400px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  @media (max-width: 1400px) {
+    top: 310px;
+    left: 5%;
+  }
 `;
 export const CarButton = styled.button`
   background: none;
@@ -59,13 +71,23 @@ export const CarBtnLabel = styled.label`
   color: #58644d;
 `;
 export const PeopleBtnWrapper = styled.div`
+  height: 40px;
+  width: 200px;
   z-index: 99;
   position: absolute;
-  right: 20%;
+  left: 45%;
   top: 40%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  @media (min-width: 951px) and (max-width: 1400px) {
+    left: 27%;
+    top: 40%;
+  }
+  @media (max-width: 950px) {
+    top: 150px;
+    left: 5%;
+  }
 `;
 export const PeopleButton = styled.button`
   background: none;

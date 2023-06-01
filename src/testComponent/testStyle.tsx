@@ -33,17 +33,22 @@ export const PlayBtnT = styled(motion.button)`
   width: 30px;
   height: 30px;
   border: none;
-  background-color: black;
+  background-color: beige;
 `;
 export const Tinput = styled.input`
   width: 400px;
   height: 15px;
   -webkit-appearance: none;
-  background: #111;
-  outline: none;
-  border-radius: 15px;
-  overflow: hidden;
+  background-color: beige;
+
   &::-webkit-slider-thumb {
-    background-color: green;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: aqua;
+    border-radius: 50%;
+  }
+  &::-webkit-slider-runnable-track {
+    background: black;
   }
 `;

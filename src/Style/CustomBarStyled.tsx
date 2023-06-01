@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CustomBarWrapper = styled.div`
+  z-index: 99;
   width: 35px;
   height: 155px;
   background: #292929 0% 0% no-repeat padding-box;

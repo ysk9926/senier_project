@@ -17,11 +17,17 @@ const Wrapper = styled.div`
   height: 35px;
   position: absolute;
   top: 5%;
-  left: 50%;
+  right: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  @media screen and (max-width: 1400px) {
+    right: 20%;
+  }
+  @media screen and (max-width: 950px) {
+    right: 5%;
+  }
 `;
 
 function MainBar() {

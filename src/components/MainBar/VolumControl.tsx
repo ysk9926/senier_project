@@ -1,4 +1,4 @@
-import { MusicVolState, ShowVolState, audioState } from "../../Atom";
+import { MusicVolState, audioState } from "../../Atom";
 import {
   MotionVol,
   MusicVolInput,
@@ -6,11 +6,11 @@ import {
   SoundSvg,
 } from "../../Style/MainBarStyle";
 import { useRecoilState } from "recoil";
-import { ChangeEvent } from "react";
+import { ChangeEvent, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
 function VolControl() {
-  const [showControls, setShowControls] = useRecoilState(ShowVolState);
+  const [showControls, setShowControls] = useState(false);
   const [volume, setVolume] = useRecoilState(MusicVolState);
   const [audio, setAudio] = useRecoilState(audioState);
   const handleVolBtnClick = () => {
@@ -21,6 +21,7 @@ function VolControl() {
     if (audio) {
       audio.volume = newVolume;
     }
+    console.log(volume);
     setVolume(newVolume);
   };
   return (

@@ -9,22 +9,9 @@ const GlobalStyled = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-`;
 
-const BackgroundMain = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-color: #bcc7b2;
-  position: absolute;
-  z-index: -1;
-`;
-const BackgroundFooter = styled.div`
-  width: 100%;
-  height: 120px;
-  background-color: #b87d54;
-  position: fixed;
-  bottom: 0px;
+  }
+
 `;
 
 const client = new QueryClient();
@@ -35,9 +22,6 @@ function Root() {
       <QueryClientProvider client={client}>
         <GlobalStyled />
         <Reset />
-
-        <BackgroundFooter />
-        <BackgroundMain />
 
         <Outlet />
       </QueryClientProvider>
